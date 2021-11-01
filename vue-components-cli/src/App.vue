@@ -7,6 +7,7 @@
         <b-col cols="8">
           <h1>Library</h1>
           <hr>
+
           <library></library>
         </b-col>
         <b-col cols="4">
@@ -35,22 +36,6 @@ export default {
     Bag,
 
   },
-
-  // methods: {
-  //   addItemToBag() {
-  //     this.Bag.push(this.item);
-  //
-  //   },
-  // }
 }
+
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

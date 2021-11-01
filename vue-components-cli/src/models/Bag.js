@@ -31,7 +31,6 @@ function BagCollection() {
     }
 
     arr.checkOutUserBag = function(){
-        console.log('HERE');
 
         for(let i=0; i <= this.length; i++) {
             this.item.checkOut()
