@@ -16,10 +16,23 @@
 
     <div id="resultField" v-for="result in results" class="result" v-bind:key="result">
 
-      <h4>Media Title: {{result.trackName}} {{result.movie}} {{result.album}} {{result.audiobook}}</h4>
+      <h4>{{ result.mediaType}} Title: {{result.trackName}} {{result.movieName}} {{result.albumName}} {{result.audiobookName}}</h4>
+
       <div class="m-1">
-        <img :src="result.artworkUrl100">
-        <p>Artist Name: {{result.artistName}} {{result.movieArtist}} {{result.allArtist}} {{result.audiobookAuthor}}</p>
+        <div class="row">
+          <div class="col-2">
+            <img :src="result.artworkUrl100">
+          </div>
+
+          <div class="col-10">
+
+            <p>Artist Name: {{result.artistName}} {{result.movieArtist}} {{result.allArtist}} {{result.audiobookAuthor}}</p>
+
+            <p>Description: {{result.mediaDescription}}</p>
+
+
+          </div>
+        </div>
         <hr>
         <b-button class="m-1">add to bag</b-button>
       </div>
